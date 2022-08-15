@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE EVENTS</title>
+</head>
+<body>
+    <h1>Explore more events</h1>
+    <button id="btn-events">Events</button>
+    <input id="text-feild" type="text">
+
+
+
+    <script>
+        // document.getElementById('text-feild').addEventListener('focus',function(){
+        //     console.log('hoga mara dara')
+        // })
+        // document.getElementById('text-feild').addEventListener('blur',function(){
+        //     console.log('hoga mara dara')
+        // })
+        // document.getElementById('text-feild').addEventListener('keydown',function(){
+        //     console.log(event.target.value)
+        // })
+        document.getElementById('text-feild').addEventListener('keyup',function(){
+            console.log(event.target.value)
+        })
+        // document.getElementById('text-feild').addEventListener('keypress',function(){
+        //     console.log(event.target.value)
+        // })
+        
+        
+        
+        document.getElementById('btn-events').addEventListener('mousemove',function(){
+            console.log('tigger');
+        })
+    </script>
+</body>
+</html>

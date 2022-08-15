@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT SUMMARY</title>
+</head>
+
+<body>
+    <h1>Fainal dom event Handlar</h1>
+    <h2 id="handlers">Default text</h2>
+    <p id="display-model">Default input text</p>
+    <input id="input-type" type="text">
+    <button id="update-model">update</button>
+
+
+    <br><br>
+    <button onclick="HandlarOnClick()">Amar Name Kazi Shahadat Hossen Rimon </button>
+    <button id="event-listener">Handle event by adEvent listener</button>
+
+
+
+
+
+    <script>
+        function HandlarOnClick() {
+            const handler = document.getElementById('handlers')
+            handler.innerText = 'Amar sona Bangla ami tomay valobasi'
+        }
+        // option ---2
+
+        document.getElementById('event-listener').addEventListener('click', function () {
+            const handler = document.getElementById('handlers')
+            handler.innerText = 'tumi mor jibon er vabna '
+        })
+
+        // option ---2 again
+        document.getElementById('update-model').addEventListener('click', function () {
+            const inputType = document.getElementById('input-type')
+            const inputField = inputType.value;
+            const p = document.getElementById('display-model');
+            p.innerText = inputField;
+            inputType.value = '';
+
+            
+        })
+
+
+
+    </script>
+</body>
+
+</html>
